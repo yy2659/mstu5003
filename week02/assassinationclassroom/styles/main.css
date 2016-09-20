@@ -4,7 +4,7 @@ html, body {
 	font-family: Helvetica, Arial, sans-serif;
 }
 
-img {
+body > img {
 	width: 100%;
 	margin: 0;
 	padding: 0;
@@ -24,6 +24,14 @@ article {
 
 p {
 	margin: 15px;
+}
+
+p.x {
+	margin: 20px;
+	color: pink;
+}
+div.x {
+	color: blue;
 }
 
 a {
