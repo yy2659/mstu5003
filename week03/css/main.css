@@ -1,0 +1,33 @@
+/*div {
+	background-color:#333333;
+}*/
+
+html, body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 100%;
+
+}
+
+/*.border {
+	border: 1px solid purple;
+}*/
+
+.header, .main, .footer {
+	border: 10px solid magenta;
+	margin: 20px 1px;
+	/*padding: 30px;*/
+}
+
+.main {
+	position: relative;
+}
+.main > div {
+	position: absolute;
+	width: 50%;
+}
+.col-1 {
+	left: 0;
+}
+.col-2 {
+	right: 0;
+}
