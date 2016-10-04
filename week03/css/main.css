@@ -1,33 +1,80 @@
-/*div {
-	background-color:#333333;
-}*/
+
+/* ZERO default margins and padding */
+div, nav, ul, li {
+	padding: 0;
+	margin: 0;
+}
 
 html, body {
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 100%;
-
+}
+nav {
+	padding: 15px;
+	background-color: orange;
+}
+nav li {
+	display: inline-block;
+	background-color: silver;
 }
 
-/*.border {
-	border: 1px solid purple;
-}*/
-
-.header, .main, .footer {
-	border: 10px solid magenta;
-	margin: 20px 1px;
-	/*padding: 30px;*/
+.header {
+	background-color: maroon;
+}
+.header h1, .header img {
+	vertical-align: middle;
+	display: inline-block;
 }
 
 .main {
 	position: relative;
 }
-.main > div {
-	position: absolute;
-	width: 50%;
+
+.col-1, .col-2 {
+	box-sizing: border-box;
+	padding: 10px;
+	min-height: 640px;
 }
+
 .col-1 {
-	left: 0;
+	width: 50%;
+	background-color: #333;
 }
 .col-2 {
+	position: absolute;
 	right: 0;
+	top: 0;
+	width: 50%;
+	background-color: pink;
+}
+.col-2 ul {
+	list-style: none;
+}
+
+.footer {
+	background-color: teal;
+	padding: 15px;
+	text-align: center;
+}
+.info {
+	text-transform: uppercase;
+	padding-right: 10px;
+}
+
+.tweetfeed {
+	position: relative;
+	min-height: 50px;
+}
+.tweet > div {
+	margin-bottom: 10px;
+}
+.tweet {
+	padding: 10px;
+	background-color: white;
+	margin-bottom: 15px;
+}
+.tweetuser {
+	color: red;
+	font-weight: bold;
+
 }
