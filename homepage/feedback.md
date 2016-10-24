@@ -293,3 +293,28 @@ While this adds a few more `divs` it organizes the component into very easily ac
 
 1. [30 CSS Selectors You Must Memorize](https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048)
 2. [Codrops CSS Property Reference](http://tympanus.net/codrops/css_reference/)
+
+## Extra Note on Javascript
+
+### return vs. console.log()
+
+	function x() {
+		return 1;
+	}
+	console.log( x() + 10 ); // See breakdown below
+
+1. x() -> returns 1
+2. 1 + 10 -> returns 11
+3. console.log(11) -> displays in browser console, 11
+
+**Conversely**
+
+	function x() {
+		console.log(1);
+	}
+	console.log( x() + 10 ); // See breakdown below
+
+1. x() -> displays in browser console, 1
+2. x() -> does not _return_ anything to where it is called as it simply sent the data to the console. x() is NaN, not a number.
+3. NaN + 10 -> returns NaN
+4. console.log(NaN) -> displays in browser console, NaN
