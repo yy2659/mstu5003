@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Interactions / Events</title>
+
+	<!-- Bootstrap Basics -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<div class="jumbotron">
+		<div class="container">
+			<h1>Interactions / Events</h1>
+		</div>
+	</div>
+	<div class="container">
+
+		<!-- BUTTON EXAMPLES -->
+		<div class="row">
+			<div class="col-md-12">
+				<div class="page-header">
+					<h2>Buttons</h2>
+				</div>
+
+				<button id="buttonA" class="btn btn-default">Button A</button>
+				<button id="buttonB" class="btn btn-primary">Button B</button>
+				<button id="buttonC" class="btn btn-info">
+					<span id="cat">PUSH HERE</span> | ----- Button C ----- | OR HERE
+				</button>
+				<button id="buttonD" class="btn btn-warning">Button D</button>
+				<button id="buttonE" class="btn btn-danger">Button E</button>
+				<pre id="buttonsPre"></pre>
+			</div>
+		</div>
+
+
+
+		<!-- TEXT EXAMPLES -->
+		<div class="row">
+			<div class="col-md-12">
+				<div class="page-header">
+					<h2>Text Inputs</h2>
+				</div>
+				<input id="textA" type="text" class="form-control" placeholder="#textA">
+				<br>
+				<input id="passwordA" type="password" class="form-control" placeholder="#passwordA --- Push Enter when done">
+				<br>
+				<textarea id="textareaA" class="form-control" placeholder="#textareaA"></textarea>
+				<pre id="textsPre"></pre>
+				<em><span id="textsCounter">0</span> characters</em>
+			</div>
+		</div>
+
+
+
+
+
+		<!-- Choices EXAMPLES -->
+		<div class="row">
+			<div class="col-md-12">
+				<div class="page-header">
+					<h2>Choices Inputs</h2>
+				</div>
+
+				<p>Following is not using Bootstrap so you can see it in simple form.</p>
+				<label>
+					<input name="favoriteAnimal" type="radio" value="cats"> Cats
+				</label>
+				<label>
+					<input name="favoriteAnimal" type="radio" value="dogs"> Dogs
+				</label>
+				<label>
+					<input name="favoriteAnimal" type="radio" value="birds"> Birds
+				</label>
+				
+			</div>
+		</div>
+
+
+	</div>
+</div>
+
+
+
+	<!-- Event Javascript -->
+	<script src="js/main.js"></script>
+</body>
+</html>

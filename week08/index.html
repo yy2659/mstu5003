@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Manipulating DOM</title>
+</head>
+<body>
+	<div id="x" class="alpha">
+		div #x
+	</div>
+	<div id="y" class="bravo">
+		div #y
+	</div>
+	<div id="z" class="alpha">
+		div #z
+	</div>
+
+
+	<!-- Hmm... do I teach oldschool to prepare for the component based approach? -->
+	<div id="myTMP" onclick="doSomething();" onmouseover="mouseIsOver();" onmouseout="mouseIsOut();">
+		<pre>#myTMP - DEMO</pre>
+	</div>
+
+	<div data-question="itemA" data-section="sectionAA">AAA</div>
+
+	<script>
+		function doSomething() {
+			alert('something');
+		}
+		function mouseIsOver() {
+			console.log('over');
+		}
+		function mouseIsOut() {
+			console.log('out');
+		}
+	</script>
+</body>
+</html>
