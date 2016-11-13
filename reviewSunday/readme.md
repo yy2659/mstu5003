@@ -1,6 +1,7 @@
 # Agenda
 
 - The logic / sequence / procedure
+- Global / Local
 - Control flow
 	- Conditionals / Loops
 - Objects
