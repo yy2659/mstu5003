@@ -83,6 +83,9 @@ var bagel = {
 toaster(muffin, 30);
 toaster(bagel, 30);
 
+// Toaster based on time (seconds)
+// Input -> Bread object, Number
+// Output -> Bread object w/ updated toastiness
 function toaster(bread, timeInSec) {
 	var toastLevel = bread.toastiness + timeInSec;
 
@@ -91,7 +94,23 @@ function toaster(bread, timeInSec) {
 	return bread;
 }
 
+// Toaster - Status Function
+// Input -> Number 0-100 (toastiness percent)
+// Output -> String status (raw, light, medium, dark, burnt)
 
-// Toaster function based on time
-// input Bread, time
-// output Bread, with some toastiness
+
+// Toaster Message
+// Input -> String status
+function showToastMsg(status) {
+	if (status === "raw") {
+		alert('Toast is uncooked.');
+	} else if (status === "light") {
+		alert('Toast is lightly browned.');
+	} else if (status === "medium") {
+		alert('Toast is medium toastiness.');
+	} else if (status === "dark") {
+		alert('Toast is well-done.');
+	} else {
+		alert('Ick, this toast is no good.');
+	}
+}
