@@ -41,3 +41,25 @@ ages.forEach(function(age){
 		console.log('cannot vote');
 	}
 });
+
+
+var inputs = document.querySelectorAll('.question [type="radio"]');
+
+inputs.forEach(function(input){
+  input.addEventListener('click', function(){
+    if (isCorrect(input)) {
+			console.log('correct answer!');
+		} else {
+			console.log('incorrect answer boo!');
+		}
+  });
+});
+
+
+function isCorrect(el) {
+	if (el.classList.contains('correct')) {
+		return true;
+	} else {
+		return false;
+	}
+}
