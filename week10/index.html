@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+
+	<link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+	<h1>My Animals</h1>
+	<button id="animalButton">Get Animals</button>
+
+	<div class="animalList">
+		<!-- Animals will go here. -->
+	</div>
+
+	<!-- This is our template -->
+	<template id="animalTMPL">
+		<!-- We repeat the content on the inside -->
+		<div class="animal">
+			<h3>
+				There are
+				<span class="animalCount">animal quantity here</span>
+				<span class="animalName">animal name here</span>
+				in this zoo.
+			</h3>
+			<p>animal status message here.</p>
+		</div>
+	</template>
+
+	<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+pre {
+	margin-top: 15px;
+}
+
+.activePre {
+	border: 1px solid #2196f3;
+	background-color: #03a9f4;
+}
+.countWarning {
+	color: #e91e63;
+	font-weight: bold;
+}
+
+label {
+	padding-right: 15px;
+}
