@@ -28,8 +28,8 @@ var piesData = [
 ];
 
 function getById(list, id) {
-	var targetItem = list.find(function(pie) {
-	  return pie.id === id;
+	var targetItem = list.find(function(listItem) {
+	  return listItem.id === id;
 	});
 
 	return targetItem;
