@@ -29,7 +29,7 @@ var piesData = [
 
 function getById(list, id) {
 	var targetItem = list.find(function(listItem) {
-	  return listItem.id === id;
+		return listItem.id === id;
 	});
 
 	return targetItem;
@@ -79,8 +79,8 @@ var pieListEl = document.querySelector('#pie-list');
 // INITIALIZING MODAL http://getbootstrap.com/javascript/#modal-usage
 $('#pieModal').modal({
 	backdrop: true, // what if we change this to false?
-	keybaord: true, // what if we change this to false?
-	show: false, // what if we change this to true?
+	keyboard: false, // what if we change this to false?
+	show: true, // what if we change this to true?
 });
 
 // METHODS of the modal http://getbootstrap.com/javascript/#modals-methods
