@@ -1,0 +1,9 @@
+li {
+	cursor: pointer;
+}
+li:hover {
+	color: magenta;
+}
+.modal img {
+	width: 100%;
+}
