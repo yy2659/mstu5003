@@ -13,6 +13,11 @@ var data = [
 		name: "donkey",
 		sound: "Hee haw",
 		friendly: true
+	},
+	{
+		name: "walrus",
+		sound: "Orrrrgh",
+		friendly: false
 	}
 ];
 
@@ -25,6 +30,8 @@ var Animal = function(animalObj) {
 		alert("The " + this.name + " says " + this.sound);
 	};
 };
+
+
 
 var animalA = new Animal({
 	name: "aardvark",
