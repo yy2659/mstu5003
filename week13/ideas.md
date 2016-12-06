@@ -8,15 +8,20 @@ We need info from the user:
 		- More specific data about the sender
 			- id
 			- name
-	- Message Text
-		- input text or textarea
-	- Intent to send / save / post
-		- button
+	- _Message Text_
+		- _input text or textarea_
+	- _Intent to send / save / post
+		- button_
 		- pressing enter
 	- Timestamp
 		- Where does this come from?
 	- Location
 		- Where does this come from?
 
+We want people to type things in. When the button is pushed....
+	- How do we access the textarea?
+	- How do we get the data in the textarea?
+	- How do we "save" that data?
 
-1)
+	- _How to get the button to work?_
+	- How to get the data from the textarea?
