@@ -12,5 +12,14 @@ var userMsg = "xxx";
 
 document.querySelector('#postBtn').addEventListener('click', function(){
 	userMsg = document.querySelector('#userText').value;
-	alert(userMsg);
+	messageList.push(userMsg);
+	console.log(messageList);
+
+	var el = document.createElement('P'); // <p></p>
+			el.innerText = userMsg;			// <p>Message here</p>
+
+	document.querySelector('#messages').appendChild(el);
+
+
+	document.querySelector('#userText').value = "";
 });

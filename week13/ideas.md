@@ -25,3 +25,9 @@ We want people to type things in. When the button is pushed....
 
 	- _How to get the button to work?_
 	- How to get the data from the textarea?
+
+Create a visual display of messages
+	- each time the button is pushed.. we're going to add a message to the chat log?
+		- create an element
+		- change the text of an element
+		- append an element
